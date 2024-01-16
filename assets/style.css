@@ -1,0 +1,99 @@
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --secondary-color: hsl(0, 0%, 100%);
+  --primary-text: hsl(0, 0%, 7%);
+  --secondary-text: hsl(0, 0%, 50%);
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 450px;
+}
+
+.card {
+  padding: 18px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-text);
+  box-shadow: 8px 8px var(--primary-text);
+}
+
+.btn-learning {
+  background-color: var(--primary-color);
+  font-weight: 800;
+  color: var(--primary-text);
+  border: none;
+  margin-top: 24px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+h1,
+h5 {
+  color: var(--primary-text);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-color);
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+}
+.author {
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.challenge {
+  text-align: center;
+}
+
+.challenge a {
+  color: var(--primary-text);
+  text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  .container {
+    min-width: 375px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 10000px;
+  }
+}
